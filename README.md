@@ -12,13 +12,25 @@ API server for accessing equity/index details and historical data from the Natio
 **⚠️ Prerequisites:** Node.js 18+ required
 
 # Start the server
-npm start
-```
+npm run start
+
 
 **🌐 Server URLs:**
-- **Main App:** http://localhost:3000
-- **GraphQL Playground:** http://localhost:3000/graphql
-- **API Documentation:** http://localhost:3000/api-docs
+- **Main App:** http://localhost:6123
+- http://localhost:6123/api/equity/?identifier=infy
+- http://localhost:6123/api/marketAnalysis/?identifier=gainers
+- http://localhost:6123/api/holidays?type=trading
+- http://localhost:6123/api/top-corp-info?symbol=TATATECH
+- **common Method:**
+- http://localhost:6123/api/common?type=/api/live-analysis-data-52weekhighstock
+- http://localhost:6123/api/common?type=/api/quote-equity?symbol=ABINFRA
+- http://localhost:6123/api/common?type=/api/marketStatus
+
+#### Query Methods
+- ** if your developer so you goto NSE website inspect element and check network section xhr/fetch 
+Request Header --> :path : /api/NextApi/apiClient/GetQuoteApi?functionName=getSymbolName&symbol=TCS
+so u check get data use common method
+example : http://localhost:6123/api/common?type=/api/NextApi/apiClient/GetQuoteApi?functionName=getSymbolName&symbol=TCS
 
 ## 📦 Installation
 
@@ -32,17 +44,14 @@ npm start
 
 - `GET /` - Market status
 - `GET /api/marketStatus` - Market status information
-- `GET /api/glossary` - NSE glossary
 - `GET /api/equity/:symbol` - Equity details
 - `GET /api/equity/:symbol/historical` - Historical data
-- `GET /api/indices` - Market indices
-- `GET /api-docs` - Interactive API documentation
+
 
 ### Container URLs
 
-- **Main App:** http://localhost:3001
-- **GraphQL:** http://localhost:3001/graphql
-- **API Docs:** http://localhost:3001/api-docs
+- **Main App:** http://localhost:6123
+
 
 ## 📊 API Methods
 
