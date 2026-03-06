@@ -30,7 +30,7 @@ npm run start
 - ** if your developer so you goto NSE website inspect element and check network section xhr/fetch 
 Request Header --> :path : /api/NextApi/apiClient/GetQuoteApi?functionName=getSymbolName&symbol=TCS
 so u check get data use common method
-example : http://localhost:6123/api/common?type=/api/NextApi/apiClient/GetQuoteApi?functionName=getSymbolName&symbol=TCS
+example : http://localhost:6123/api/common?type=/api/NextApi/apiClient?functionName=getGiftNifty
 
 ## 📦 Installation
 
@@ -38,7 +38,7 @@ example : http://localhost:6123/api/common?type=/api/NextApi/apiClient/GetQuoteA
 
 - **Node.js:** Version 18 or higher
 - **npm:** Version 8 or higher (comes with Node.js 18+)
-
+- npm i
 
 ### Core Endpoints
 
