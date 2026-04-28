@@ -1,6 +1,6 @@
 # NSE_API_Unofficial
 National Stock Exchange API (Unofficial)
-API server for accessing equity/index details and historical data from the National Stock Exchange of India.
+API server for accessing equity/index details and historical data from the National Stock Exchange of India. Only For Educational Purpose.
 
 ## ✨ Features
 - **🔒 CORS Configuration** - Configurable cross-origin resource sharing
